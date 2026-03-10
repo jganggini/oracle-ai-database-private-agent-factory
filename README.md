@@ -434,21 +434,15 @@ En `LLM Configuration`, selecciona `OCI GenAI` y completa la configuración del 
 - `Region: us-chicago-1`
 - `Key File: files/oci/key.pem`
 
-Usa `files/oci/config` como referencia para extraer `user`, `fingerprint`, `tenancy`, `region` y la ruta de la llave, pero no copies valores sensibles sin validarlos.
+Usa `files/oci/config` como referencia para extraer `user`, `fingerprint`, `tenancy`, `region` y la ruta de la llave, pero no copies valores sensibles sin validarlos. Luego prueba la conexión con `Test connection` y guarda con `Save configuration`. En la misma pantalla revisa la sección `Embedding model`: por defecto se usa el embedding local `multilingual-e5-base`, así que valídalo también con `Test connection` antes de continuar.
 
 ![img42](./img/img42.png)
 
 **Step 43**
 
-Prueba la conexión del modelo generativo con `Test connection`, guarda la configuración con `Save configuration` y luego revisa la sección `Embedding model`. En las capturas se usa el embedding local `multilingual-e5-base`; también se valida con `Test connection`.
-
-![img43](./img/img43.png)
-
-**Step 44**
-
 Guarda ambas configuraciones y finaliza con `Finish Installation`.
 
-![img44](./img/img44.png)
+![img43](./img/img43.png)
 
 ---
 
@@ -458,25 +452,25 @@ Guarda ambas configuraciones y finaliza con `Finish Installation`.
 
 Cuando la instalación redirija a la pantalla de acceso, introduce el correo y la contraseña del usuario administrador.
 
-![img45](./img/img45.png)
+![img44](./img/img44.png)
 
 **Step 46**
 
 Haz clic en `Sign In`.
 
-![img46](./img/img46.png)
+![img45](./img/img45.png)
 
 **Step 47**
 
 Ya dentro del estudio, entra a `Data sources` desde el menú lateral.
 
-![img47](./img/img47.png)
+![img46](./img/img46.png)
 
 **Step 48**
 
 Pulsa `Add data source`.
 
-![img48](./img/img48.png)
+![img47](./img/img47.png)
 
 **Step 49**
 
@@ -491,19 +485,19 @@ Registra una nueva fuente de datos de tipo `Database` con valores como estos:
 
 Luego ejecuta `Test connection`.
 
-![img49](./img/img49.png)
+![img48](./img/img48.png)
 
 **Step 50**
 
 Cuando la conexión sea exitosa, confirma con `Add database source`.
 
-![img50](./img/img50.png)
+![img49](./img/img49.png)
 
 **Step 51**
 
 Verifica que la base quede registrada como `connected` y luego entra a `Template gallery`.
 
-![img51](./img/img51.png)
+![img50](./img/img50.png)
 
 ---
 
@@ -513,13 +507,13 @@ Verifica que la base quede registrada como `connected` y luego entra a `Template
 
 En `Template gallery`, importa el flujo `Intent-Based SQL Dispatcher`.
 
-![img52](./img/img52.png)
+![img51](./img/img51.png)
 
 **Step 53**
 
 Se abrirá el `Agent Builder` con el flujo importado. Revisa la estructura general antes de editarlo.
 
-![img53](./img/img53.png)
+![img52](./img/img52.png)
 
 **Step 54**
 
@@ -528,13 +522,13 @@ Ajusta el flujo para que use:
 - El LLM `llm_model_entry` en los nodos `LLM`
 - La base `ora26ainame` en el nodo `SQL query`
 
-![img54](./img/img54.png)
+![img53](./img/img53.png)
 
 **Step 55**
 
 Abre el nodo `Prompt` que alimenta la consulta base.
 
-![img55](./img/img55.png)
+![img54](./img/img54.png)
 
 **Step 56**
 
@@ -546,13 +540,13 @@ select * from app_aidp.interactions_analysis
 
 Guarda con `Finish editing`.
 
-![img56](./img/img56.png)
+![img55](./img/img55.png)
 
 **Step 57**
 
 Guarda el flujo y abre `Playground` para probarlo.
 
-![img57](./img/img57.png)
+![img56](./img/img56.png)
 
 **Step 58**
 
@@ -561,7 +555,7 @@ Haz preguntas en lenguaje natural sobre los datos y valida la respuesta. En la c
 - `¿Cuál fue el usuario con mejor puntuación y cuál fue su comentario?`
 - `¿Cuál fue el usuario con mayor toxicidad y cuál fue su comentario?`
 
-![img58](./img/img58.png)
+![img57](./img/img57.png)
 
 ---
 
@@ -603,7 +597,7 @@ Puedes probar preguntas como estas en el `Playground`:
 │       ├── key.pem                     # Clave privada OCI
 │       ├── key_public.pem              # Clave pública original
 │       └── key_agent_factoru_public.pem# Clave pública para la VM
-├── img/                                # Capturas del laboratorio (img01.png ... img58.png)
+├── img/                                # Capturas del laboratorio (img01.png ... img57.png)
 ├── requirements.txt                    # Dependencias base
 └── README.md                           # Este manual
 ```
