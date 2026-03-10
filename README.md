@@ -244,7 +244,12 @@ En tu equipo local, verifica que en la carpeta `oci` existan `config`, `key.pem`
 
 **Step 20**
 
-Abre `key_public.pem` y confirma que contiene la clave pública.
+Abre `key_public.pem` y confirma que contiene la clave pública. vamos a modificarla para que quede en una sola linea
+
+```sql
+ssh-rsa <key_public.pem in line>
+```
+
 
 ![img20](./img/img20.png)
 
@@ -367,18 +372,14 @@ Ejecuta el script de `files/oracle26ai.txt`, pero úsalo solo como plantilla y r
 Ejemplo de script sanitizado:
 
 ```sql
-CREATE USER app_user IDENTIFIED BY "<tu-password-seguro>"
-DEFAULT TABLESPACE USERS
-QUOTA UNLIMITED ON USERS;
+--1. Create upser for Agent Factory
 
-GRANT CONNECT, RESOURCE, CREATE TABLE, CREATE SYNONYM,
-      CREATE DATABASE LINK, CREATE ANY INDEX, INSERT ANY TABLE,
-      CREATE SEQUENCE, CREATE TRIGGER, CREATE USER, DROP USER
-TO app_user;
-
-GRANT CREATE SESSION TO app_user WITH ADMIN OPTION;
-GRANT READ, WRITE ON DIRECTORY DATA_PUMP_DIR TO app_user;
-GRANT SELECT ON SYS.V_$PARAMETER TO app_user;
+CREATE USER app_user IDENTIFIED BY <pass> DEFAULT TABLESPACE USERS QUOTA unlimited ON USERS;
+ GRANT CONNECT, RESOURCE, CREATE TABLE, CREATE SYNONYM, CREATE DATABASE LINK, CREATE ANY INDEX, INSERT ANY TABLE, CREATE SEQUENCE, CREATE TRIGGER, CREATE USER, DROP USER TO app_user;
+ GRANT CREATE SESSION TO app_user WITH ADMIN OPTION;
+ GRANT READ, WRITE ON DIRECTORY DATA_PUMP_DIR TO app_user;
+ GRANT SELECT ON SYS.V_$PARAMETER TO app_user;
+/
 ```
 
 Confirma en `Script Output` que el usuario y los grants se hayan creado correctamente.
@@ -425,7 +426,7 @@ En `LLM Configuration`, selecciona `OCI GenAI` y completa la configuración del 
 
 - `Configuration name: llm_model_entry`
 - `Model ID: google.gemini-2.5-pro`
-- `Endpoint: https://inference.generativeai...oraclecloud.com`
+- `Endpoint: https://inference.generativeai.us-chicago-1.oci.oraclecloud.com`
 - `Compartment ID: <tu-compartment-ocid>`
 - `User: <tu-user-ocid>`
 - `Finger Print: <tu-fingerprint>`
