@@ -8,7 +8,7 @@
 
   <p>Laboratorio guiado: despliegue de Agent Factory sobre Oracle Cloud con Autonomous AI Database, OCI GenAI y un flujo conversacional basado en SQL</p>
 
-  <a style="font-size:large;" href="files/oracle26ai.txt">📄 Ver Script SQL »</a>
+  <a style="font-size:large;" href="https://objectstorage.us-chicago-1.oraclecloud.com/n/axzs95biupm2/b/labs/o/lab.zip">📄 Ver Script SQL »</a>
   <br/>
   <a href="files/Wallet_ora26ainame.zip">🗄️ Ver Wallet de ejemplo</a>
   ·
