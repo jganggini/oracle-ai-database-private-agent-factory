@@ -1,0 +1,6 @@
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaapengyr53ti7yjxqljkxe3bpzogbvxik6g5ynrnmydudi3gj5eapa
+fingerprint=56:ee:ed:87:16:bb:fd:b8:8f:9e:da:fa:0f:49:02:92
+tenancy=ocid1.tenancy.oc1..aaaaaaaabtj5xgxi2pkzbymkm66hrp3uuxpkxniol4cukgdwhxl2jrqgkncq
+region=us-chicago-1
+key_file=F:\oracle\aidp\oci\key.pem
