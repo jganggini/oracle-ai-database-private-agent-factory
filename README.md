@@ -8,14 +8,22 @@
 
   <p>Laboratorio guiado: despliegue de Agent Factory sobre Oracle Cloud con Autonomous AI Database, OCI GenAI y un flujo conversacional basado en SQL</p>
 
-  <a style="font-size:large;" href="https://objectstorage.us-chicago-1.oraclecloud.com/n/axzs95biupm2/b/labs/o/lab.zip">📄 Ver Script SQL »</a>
+  <a style="font-size:large;" href="https://objectstorage.us-chicago-1.oraclecloud.com/n/axzs95biupm2/b/labs/o/lab.zip">📄 Ver Files »</a>
   <br/>
-  <a href="files/Wallet_ora26ainame.zip">🗄️ Ver Wallet de ejemplo</a>
+  <a href="https://www.youtube.com/watch?v=zihZUTZAm6k&list=PLMUWTQHw13gZlzbOKtsJwXOGizrOCsOkx&index=2">🎬 Ver Video Tutorial</a>
   ·
-  <a href="https://github.com/jganggini/oracle-ai-database-private-agent-factory/issues">💣 Report Bug</a>
+  <a href="https://github.com/jganggini/oracle-ai-data-platform-workbench/issues">💣 Report Bug</a>
   ·
-  <a href="https://github.com/jganggini/oracle-ai-database-private-agent-factory/pulls">🚀 Request Feature</a>
+  <a href="https://github.com/jganggini/oracle-ai-data-platform-workbench/pulls">🚀 Request Feature</a>
+    
+  <div align="center">
+  <a href="https://www.youtube.com/watch?v=zIxA0ebo2v4&list=PLMUWTQHw13gZlzbOKtsJwXOGizrOCsOkx">
+    <img src="https://img.shields.io/badge/YouTube-Ver%20Tutorial-red?style=for-the-badge&logo=youtube" alt="Video Tutorial"/>
+  </a>
 </div>
+
+
+
 
 ---
 
