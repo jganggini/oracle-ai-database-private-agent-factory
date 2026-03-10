@@ -18,10 +18,9 @@
   <a href="https://www.youtube.com/watch?v=zIxA0ebo2v4&list=PLMUWTQHw13gZlzbOKtsJwXOGizrOCsOkx">
     <img src="https://img.shields.io/badge/YouTube-Ver%20Tutorial-red?style=for-the-badge&logo=youtube" alt="Video Tutorial"/>
   </a>
+  </div>
+
 </div>
-
-
-
 
 ---
 
