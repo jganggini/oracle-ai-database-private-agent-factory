@@ -581,7 +581,6 @@ Puedes probar preguntas como estas en el `Playground`:
 | `files/oci/key.pem` | Clave privada para la autenticación con OCI GenAI |
 | `files/oci/key_public.pem` | Clave pública original de referencia |
 | `files/oci/key_agent_factoru_public.pem` | Clave pública cargada al crear la VM del stack |
-| `requirements.txt` | Dependencias base del repositorio |
 
 ---
 
@@ -598,21 +597,8 @@ Puedes probar preguntas como estas en el `Playground`:
 │       ├── key_public.pem              # Clave pública original
 │       └── key_agent_factoru_public.pem# Clave pública para la VM
 ├── img/                                # Capturas del laboratorio (img01.png ... img57.png)
-├── requirements.txt                    # Dependencias base
 └── README.md                           # Este manual
 ```
-
----
-
-## ✅ Resultado esperado
-
-Al finalizar el laboratorio deberías tener:
-
-- Una instancia de `Oracle AI Database Private Agent Factory` desplegada en OCI
-- Un `data source` de base de datos registrado y conectado
-- Un modelo LLM de `OCI GenAI` configurado y operativo
-- Un flujo importado desde `Template gallery` ajustado al caso de uso
-- Respuestas conversacionales sobre la tabla `app_aidp.interactions_analysis`
 
 ---
 
